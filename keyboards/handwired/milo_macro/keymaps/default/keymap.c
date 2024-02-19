@@ -14,9 +14,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
      * └───┴───┴───┘
      */
     [0] = LAYOUT_ortho_3x3(
-         LT(1,KC_A),    KC_B,    KC_C,
-        KC_D,    KC_E,    KC_F,
-        KC_G,    KC_H,    KC_I
+         LT(1,KC_A),    KC_B,    LCTL(LALT(KC_L)),
+        LT(2,KC_D),    LT(2,KC_E),    KC_F,
+        LCTL(LALT(LSFT(KC_T))),    LCTL(LSFT(KC_SLSH)),    KC_RSFT
     ),
     /*
      * ┌───┬───┬────────────┐
@@ -28,8 +28,13 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
      * └───┴───┴────────────┘
      */
     [1] = LAYOUT_ortho_3x3(
-        KC_6,   LT(1,KC_7),  KC_8,
-        KC_3,   LT(1,KC_4), KC_5,
-        KC_0,   KC_1,   QK_BOOT
+        KC_6,   RGB_HUI,  RGB_MOD,
+        RGB_TOG,   RGB_HUD, RGB_RMOD,
+        RGB_M_B,   RGB_M_T,   QK_BOOT
+    ),
+    [2] = LAYOUT_ortho_3x3(
+        KC_6,   RGB_SPI,  RGB_MOD,
+        RGB_TOG,   RGB_SPD, RGB_RMOD,
+        RGB_M_B,   RGB_M_T,  KC_P3
     )
 };
