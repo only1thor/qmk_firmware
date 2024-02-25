@@ -5,13 +5,15 @@
 
 #define WS2812_DI_PIN F4
 #ifdef WS2812_DI_PIN
-#define RGBLED_NUM  1 // Replace with the actual number of LEDs in your strip
+#define RGBLED_NUM  6 // Replace with the actual number of LEDs in your strip
 #define RGBLIGHT_HUE_STEP  20
 #define RGBLIGHT_SAT_STEP  20
 #define RGBLIGHT_VAL_STEP  20
+/*
 #define RGBLIGHT_SLEEP
-#define RGBLIGHT_EFFECT_KNIGHT_LENGTH  5
-#define RGBLIGHT_EFFECT_SNAKE_LENGTH  6
+#define RGBLIGHT_EFFECT_KNIGHT_LENGTH  3
+#define RGBLIGHT_EFFECT_SNAKE_LENGTH  2
+*/
 #endif
 /*
  * Feature disable options
